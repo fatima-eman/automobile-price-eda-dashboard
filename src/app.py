@@ -12,7 +12,7 @@ st.set_page_config(
 
 sns.set_theme(style="whitegrid")
 
-# 2. Data Loading Function with Caching
+# 2. Data Loading Function with Caching using Decorator
 @st.cache_data
 def load_data():
     return pd.read_csv('data/processed/cleaned_vehicles.csv')
